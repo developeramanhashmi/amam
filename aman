@@ -1,0 +1,413 @@
+P.01
+write a c Program to Print the message.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+     char message [20] = "India is my Country"; 
+     printf ("%s", message);
+getch();
+}
+ 
+Output:
+India is my Country
+
+P.02
+write a C Program to print the message using char datatype by keyboard.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+     char message [100];
+     clrscr(); 
+     printf("Enter your message \n"); 
+     scanf("%s", &message); 
+getch ();
+}
+
+Output:
+Enter your message 
+welcome to MANUU
+
+
+
+P. 03
+write a C Program to print a message to using gets(), puts() function.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    char m[50];
+    clrscr();  
+    printf ("Enter the message"); 
+    gets (m);
+    puts (m); 
+    getch();
+}
+
+Output:
+
+P.04
+write C Program to print integer number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+     int i = 5;
+     clrscr(); 
+     printf ("The integer number is %d", i); 
+     getch();
+}
+
+P.05
+write a c Program to take input from keyboard and Print integer number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+     int i;
+     clrscr(); 
+     printf ("Enter the integer no."); 
+     scanf("%d\n", & i); 
+     printf ("Integer no. is %d", i);
+     getch();
+}
+
+Output:
+The integer number is 5
+
+
+P.06
+write a c Program to use All Primary data type.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a=4;
+    long int b=5245245;
+    float c=3.14;
+    double d=3.4354345;
+    char e='g';
+    char f[10]="india";
+    clrscr();
+    printf("integer=%d\n",a);
+    printf("long integer=%ld\n",b);
+    printf("float=%f\n",c);
+    printf("double=%lf\n",d);
+    printf("char=%c\n",e);
+    printf("array=%s\n",f);
+    getch();
+}
+
+Output:
+integer=4
+long integer=5245245
+float=3.140000
+double=3.435434
+char=g
+array=india
+
+P.07
+Write a C program to find the addition of two number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a,b;
+    clrscr();
+    printf("enter two number\n");
+    scanf("%d%d",&a,&b);
+    printf("addition of two number is %d\n",a+b);
+    getch();
+}
+
+Output:
+enter two number
+56
+67
+addition of two number is 123
+
+P.08
+Write a C program to find the subtraction of two number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a,b;
+    clrscr();
+    printf("enter two number\n");
+    scanf("%d%d",&a,&b);
+    printf("subtraction of two number is %d\n",a-b);
+    getch();
+}
+
+Output:
+enter two number
+6348
+8734
+subtraction of two number is -2386
+
+P.09
+Write a C program to find the multiplication of two number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a,b;
+    clrscr();
+    printf("enter two number\n");
+    scanf("%d%d",&a,&b);
+    printf("multiplication of two number is %d\n",a*b);
+    getch();
+}
+
+Output:
+enter two number
+78
+785
+multiplication of two number is 61230
+
+P.10
+Write a C program to find the division of two number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a,b;
+    clrscr();
+    printf("enter two number\n");
+    scanf("%d%d",&a,&b);
+    printf("division of two number is %d\n",a/b);
+    getch();
+}
+
+Output:
+enter two number
+67426
+67
+division of two number is 1006
+
+
+
+P.11
+Write a C program to find the modulus of two number.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a,b;
+    clrscr();
+    printf("enter two number\n");
+    scanf("%d%d",&a,&b);
+    printf("modulus of two number is %d\n",a%b);
+    getch();
+}
+
+Output:
+enter two number
+67
+23
+modulus of two number is 21
+
+P.12
+Write a c program to perform all arithmetic operation.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+     int a,b;
+     clrscr();
+     printf("enter two number\n");
+     scanf("%d%d",&a,&b);
+     printf("addition of two number is %d\n",a+b);
+     printf("subtraction of two number is %d\n",a-b);
+     printf("multiplication of two number is %d\n",a*b);
+     printf("division of two number is %d\n",a/b);
+     printf("modulus of two number is %d\n",a%b);
+     getch();
+}
+Output:
+enter two number
+75
+6
+addition of two number is 81
+subtraction of two number is 69
+multiplication of two number is 450
+division of two number is 12
+modulus of two number is 3
+
+
+
+P.13
+Write a c program to convert temperature Fahrenheit to celcius.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    float f,c;
+    clrscr();
+    printf("enter the temperature in fahrenheit\n");
+    scanf("%f",&f);
+    c=(f-32)*5/9;
+    printf("temperature in celcius=%f",c);
+    getch();
+}
+
+Output:
+enter the temperature in fahrenheit
+67
+temperature in celcius=19.444445
+
+
+P.14
+Write a c program to convert temperature celcius to Fahrenheit.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    float f,c;
+    clrscr();
+    printf("enter the temperature in celcius\n");
+    scanf("%f",&c);
+    f= ((9/5)*c)+32;
+    printf("temperature in fahrenheit=%f",f);
+    getch();
+}
+
+Output:
+enter the temperature in celcius
+87
+temperature in fahrenheit=119.000000
+
+P.15
+Write a c program for variable, constant and datatype by the use of sizeof() function.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    printf("Size of short: %zu bytes\n", sizeof(short));
+    printf("Size of int: %zu bytes\n", sizeof(int));
+    printf("Size of long int: %zu bytes\n", sizeof(long int));
+    printf("Size of float: %zu bytes\n", sizeof(float));
+    printf("Size of double: %zu bytes\n", sizeof(double));
+     printf("Size of long double: %zu bytes\n", sizeof(long double));
+    printf("Size of char: %lu bytes\n", sizeof(char));
+    getch();
+}
+
+Output:
+Size of short: 2 bytes
+Size of int: 4 bytes
+Size of long int: 4 bytes
+Size of float: 4 bytes
+Size of double: 8 bytes
+Size of long double: 12 bytes
+Size of char: 1 bytes
+
+
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    printf("Size of short: %zu bytes\n", sizeof(1));
+    printf("Size of int: %zu bytes\n", sizeof(1000));
+    printf("Size of long int: %zu bytes\n", sizeof(10000000));
+    printf("Size of float: %zu bytes\n", sizeof(54.8748));
+    printf("Size of double: %zu bytes\n", sizeof(6743.8787987945));
+    printf("Size of long double: %zu bytes\n",               
+    sizeof(7747745.7854785785785785785));
+    printf("Size of char: %lu bytes\n", sizeof('N'));
+    getch();
+}
+
+Output:
+Size of short: 4 bytes
+Size of int: 4 bytes
+Size of long int: 4 bytes
+Size of float: 8 bytes
+Size of double: 8 bytes
+Size of long double: 8 bytes
+Size of char: 4 bytes
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    short a=1;
+    int b=34;
+    long int c=464646;
+    float d=3.14;
+    double e=5535.465656;
+    long double f=43343434.343434334545;
+    char g='N';
+    clrscr();
+    printf("a: %zu bytes\n", sizeof(a));
+    printf("b: % bytes\n", sizeof(b));
+    printf("c: %zu bytes\n", sizeof(c));
+    printf("d: % bytes\n", sizeof(d));
+    printf("e: %zu bytes\n", sizeof(e));
+    printf("f: %zu bytes\n", sizeof(f));
+    printf("g: %zu bytes\n", sizeof(g));
+    getch();
+}
+
+Output:
+a: 2 bytes
+b: bytes
+c: 4 bytes
+d: bytes
+e: 8 bytes
+f: 12 bytes
+g: 1 bytes
+
+P.16
+Write ac program by the use of relational operators.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int a,b;
+    printf("enter two numbers\n");
+    scanf("%d%d",&a,&b);
+    printf("a==b=%d\n",a==b);
+    printf("a>b=%d\n",a>b);
+    printf("a>=b=%d\n",a>=b);
+    printf("a<b=%d\n",a<b);
+    printf("a<=b=%d\n",a<=b);
+    getch();
+}
+
+Output:
+enter two numbers
+57
+68
+a==b=0
+a>b=0
+a>=b=0
+a<b=1
+a<=b=1
+
+P.17
+Write a c program by the use of increament and decreament operator.
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int x,y,z;
+    clrscr();
+    x=5;
+    y=x++;
+    z=++x;
+    printf("x=%d\ny=%d\nz=%d\n",x,y,z);
+    y=x--;
+    z=--x;
+    printf("x=%d\ny=%d\nz=%d\n",x,y,z);
+    getch();
+}
+
+Output:
+x=7
+y=5
+z=7
+x=5
+y=7
+z=5
